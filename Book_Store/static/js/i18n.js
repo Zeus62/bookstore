@@ -3,13 +3,7 @@
 const SUPPORTED_LANGUAGES = ['en', 'ar', 'fr', 'de'];
 const DEFAULT_LANGUAGE = 'en';
 
-const fallbackEN = {
-  "header": { "browse_books": "Browse Books" },
-  "nav": { "brand_book": "Book", "brand_store": "Store", "home": "Home", "books": "Books", "about": "About", "welcome": "Welcome,", "reviews": "Reviews", "sign_out": "Sign out", "login": "Login", "sign_up": "Sign Up" },
-  "footer": { "book": "Book", "store": "Store", "home": "Home", "books": "Books", "about": "About", "copyright": "© 2025 Book Store. All rights reserved." }
-};
-
-let currentTranslations = fallbackEN;
+let currentTranslations = {};
 
 document.addEventListener('DOMContentLoaded', () => {
     let lang = localStorage.getItem('lang');
@@ -34,19 +28,14 @@ async function setLanguage(lang) {
     document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
     updateActiveSwitcher(lang);
 
-    if (lang === 'en') {
-        currentTranslations = fallbackEN;
-        applyTranslations();
-    } else {
-        try {
-            const response = await fetch(`/static/i18n/${lang}.json`);
-            if (response.ok) {
-                currentTranslations = await response.json();
-                applyTranslations();
-            }
-        } catch (error) {
-            console.error('Error fetching translations:', error);
+    try {
+        const response = await fetch(`/static/i18n/${lang}.json`);
+        if (response.ok) {
+            currentTranslations = await response.json();
+            applyTranslations();
         }
+    } catch (error) {
+        console.error('Error fetching translations:', error);
     }
 }
 
