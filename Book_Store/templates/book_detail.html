@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ book.title }} - Book Details{% endblock %}
+
+{% block content %}
+<div class="book-detail-container">
+    <div class="book-main-details">
+        <div class="book-detail-cover">
+            <i class="fas fa-book book-detail-icon"></i>
+        </div>
+        <div class="book-detail-info">
+            <h1 class="book-detail-title" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.name">{{ book.title }}</h1>
+            <p class="book-detail-author"><i class="fas fa-pen-fancy"></i> {{ book.author }}</p>
+            <p class="book-detail-category"><span data-i18n="books.category_label">Category:</span> <span data-i18n="categories.{{ book.category|replace(' ', '_')|lower }}">{{ book.category }}</span></p>
+            <p class="book-detail-description" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.desc">{{ book.description }}</p>
+            <p class="book-detail-price">${{ book.price }}</p>
+        </div>
+    </div>
+
+    {% if related_books %}
+    <div class="related-books">
+        <h2 data-i18n="books.related_books">Related Books</h2>
+        <div class="related-books-grid">
+            {% for related in related_books %}
+            <div class="related-book">
+                <a href="{{ url_for('main.book_detail', book_id=related.id) }}">
+                    <div class="related-book-cover">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4 data-i18n="products.{{ related.title|replace(' ', '_')|lower }}.name">{{ related.title }}</h4>
+                    <p>${{ related.price }}</p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

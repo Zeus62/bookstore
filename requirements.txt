@@ -1,0 +1,11 @@
+Flask
+Flask-WTF
+WTForms
+Flask-SQLAlchemy
+PyMySQL
+Flask-Bcrypt
+Flask-Login
+email-validator
+gunicorn
+pyOpenSSL
+cryptography
