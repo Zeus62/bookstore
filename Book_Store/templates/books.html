@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} Books {% endblock %}
+
+{% block content %}
+<div class="books-page-main-div">
+  <div class="books-filters">
+    <form method="get" action="{{ url_for('main.books') }}" class="search-filter-form">
+      <div class="search-container">
+        <input type="text" name="search" data-i18n="books.search_placeholder" placeholder="Search books..." value="{{ current_search or '' }}"
+          class="search-input">
+        <button type="submit" class="search-button" data-i18n="books.search_btn">Search</button>
+      </div>
+
+      <div class="category-container">
+        <select name="category" class="category-select">
+          <option value="" data-i18n="books.all_categories">All Categories</option>
+          {% for category in categories %}
+          <option value="{{ category }}" {% if category==current_category %}selected{% endif %} data-i18n="categories.{{ category|replace(' ', '_')|lower }}">
+            {{ category }}
+          </option>
+          {% endfor %}
+        </select>
+        <button type="submit" class="filter-button" data-i18n="books.filter_btn">Filter</button>
+      </div>
+    </form>
+  </div>
+
+  {% if books %}
+  <div class="books-grid">
+    {% for book in books %}
+    <div class="book-card">
+      <div class="book-cover">
+        <i class="fas fa-book book-cover-icon"></i>
+      </div>
+      <div class="book-info">
+        <h6 class="book-title">
+          <a href="{{ url_for('main.book_detail', book_id=book.id) }}" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.name">
+            {{ book.title }}
+          </a>
+        </h6>
+        <p class="book-author"><i class="fas fa-pen-fancy"></i> {{ book.author }}</p>
+        <p class="book-description" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.desc">{{ book.description }}</p>
+        <p class="book-price">${{ book.price }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="no-books-found">
+    <p data-i18n="books.no_books">No books found matching your search or filter.</p>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

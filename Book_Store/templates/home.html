@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-title" data-i18n="home.site_name">Book Store</h1>
+            <p class="hero-desc" data-i18n="home.site_desc">
+                Welcome to Book Store, your destination for discovering timeless classics and modern masterpieces.
+                We offer a curated collection of books across all genres — from fiction and fantasy to philosophy
+                and science fiction. Whether you are a casual reader or a devoted bookworm, you will find
+                something to love in our collection. Explore, read, and grow with us.
+            </p>
+            <a href="{{ url_for('main.books') }}" class="btn btn-primary hero-btn" data-i18n="home.browse_collection">Browse Collection</a>
+        </div>
+    </div>
+
+    <br />
+
+    <!-- Category Title -->
+    <div class="category">
+        <div class="container">
+            <p class="categoryName text-center" data-i18n="home.our_categories">Our Categories</p>
+        </div>
+    </div>
+
+    <!-- Categories Cards -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card border h-100 card-format">
+                    <div class="card-icon-holder">
+                        <i class="fas fa-book-open card-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center" data-i18n="home.fiction_title">Fiction</h4>
+                        <div class="card-text">
+                            <p data-i18n="home.fiction_desc">Dive into captivating stories and unforgettable characters.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ url_for('main.books') }}" class="btn btn-primary book-btn" data-i18n="home.browse">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card border h-100 card-format">
+                    <div class="card-icon-holder">
+                        <i class="fas fa-hat-wizard card-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center" data-i18n="home.fantasy_title">Fantasy</h4>
+                        <div class="card-text">
+                            <p data-i18n="home.fantasy_desc">Explore magical worlds and epic adventures beyond imagination.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ url_for('main.books') }}" class="btn btn-primary book-btn" data-i18n="home.browse">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card border h-100 card-format">
+                    <div class="card-icon-holder">
+                        <i class="fas fa-brain card-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center" data-i18n="home.philosophy_title">Philosophy</h4>
+                        <div class="card-text">
+                            <p data-i18n="home.philosophy_desc">Discover wisdom and ideas that have shaped human thought.</p>
+                        </div>
+                        <div class="text-center">
+                            <a href="{{ url_for('main.books') }}" class="btn btn-primary book-btn" data-i18n="home.browse">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vision and Mission -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="about-us">
+                <div class="container p-5">
+                    <p class="siteName" data-i18n="home.vision_title">Vision</p>
+                    <p class="siteDesc" data-i18n="home.vision_desc">At Book Store, our vision is to inspire a love of reading in every person. We believe that books have the power to transform lives, broaden perspectives, and connect people across cultures and generations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="about-us">
+                <div class="container p-5">
+                    <p class="siteName" data-i18n="home.mission_title">Mission</p>
+                    <p class="siteDesc" data-i18n="home.mission_desc">Our mission is to provide readers with easy access to a diverse selection of quality books at affordable prices, while creating a welcoming community for book lovers everywhere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Section -->
+    {% if current_user.is_authenticated %}
+    <div class="member m-5">
+      <div class="container text-center">
+          <p class="memberTitle" data-i18n="home.member_title">Welcome Back, Reader!</p>
+          <p style="color: #666;" data-i18n="home.member_desc">Explore our latest collection and leave your reviews.</p>
+          <a href="{{ url_for('main.books') }}" class="btn btn-primary book-btn" data-i18n="home.browse_collection">Browse Collection</a>
+      </div>
+    </div>
+    {% else %}
+    <div class="member m-5">
+      <div class="container text-center">
+          <p class="memberTitle" data-i18n="home.join_title">Join Our Community</p>
+          <p style="color: #666;" data-i18n="home.join_desc">Sign up to leave reviews and get personalized recommendations.</p>
+          <a href="{{ url_for('users.login') }}" class="btn btn-primary book-btn" data-i18n="home.login_now">Login Now!</a>
+      </div>
+    </div>
+    {% endif %}
+
+{% endblock %}

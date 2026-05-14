@@ -1,216 +1,116 @@
-**Prime Supplements** is a full-stack e-commerce web application built with Flask using the **Blueprint design pattern** to ensure modular, scalable, and organized code structure. The platform allows users to browse health supplements, manage a shopping cart, register/login securely, and write reviews.
+# 📚 Book Store Web Application
 
-## 🧠 Features
+A professional, fully responsive web application built with Python and Flask. This project is a comprehensive digital bookstore platform featuring internationalization (i18n), a robust MySQL database, and full Docker containerization for seamless deployment.
 
-- 🛒 Product browsing, searching, filtering by category
-- 🧾 Shopping cart system (session-based for guests, user-based for logged-in users)
-- 🔐 User registration, login, and session management using Flask-Login and bcrypt
-- 🗣️ Authenticated users can add, edit, and delete their own product reviews
-- 💬 Flash messaging for feedback on user actions
-- 📦 Product data creation with category-based organization
-- 📁 Modular architecture using Flask Blueprints
+![Book Store Banner](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-## 💡 Technologies Used
+## ✨ Key Features
 
-### Backend
-- Python
-- Flask
-- Flask Blueprints (modular structure)
-- Flask-Login
-- Flask-Bcrypt
-- Flask-WTF / WTForms
-- Flask-SQLAlchemy
-- SQLite (local development database)
+- **🌐 Internationalization (i18n):** Multi-language support right out of the box. Currently supports **English, Arabic (RTL), French, and German**.
+- **🐳 Dockerized Environment:** Production-ready containerization. The application and database are fully orchestrated using Docker and Docker Compose.
+- **🗄️ MySQL Database Engine:** Reliable and scalable data storage powered by MySQL 8.0, managed via `Flask-SQLAlchemy`.
+- **🔐 Secure Authentication:** User registration and login system with password hashing using `Flask-Bcrypt` and session management via `Flask-Login`.
+- **📱 Responsive UI/UX:** Clean, modern, and mobile-friendly interface styled with a custom green-themed design and Bootstrap 5.
+- **⭐ Review System:** Authenticated users can write, edit, and delete reviews for the store.
+- **🔍 Search & Filtering:** Easily browse books by category or search by title/author.
 
-### Frontend
-- HTML
-- CSS
-- Bootstrap
+## 🛠️ Technology Stack
 
-### Deployment
-- Docker
-- Docker Hub
-
-
-## 🧪 Testing
-
-This repository includes unit, integration, and UI (end-to-end) tests. The tests are organised under `tests/` and are designed to run locally and in CI.
-
-### Test types and locations
-
-- **Unit tests**: `tests/unit/` — test isolated functions and services (business logic, helpers).
-- **Integration tests**: `tests/integration/` — exercise Flask routes, DB interactions, and combined components.
-- **UI / E2E tests**: `tests/e2e/` (or `tests/ui/`) — browser-driven flows using Selenium (the project contains WebDriver-based tests).
-
-### Running tests locally
-
-Run the full test suite:
-
-```bash
-pytest
-```
-
-Run unit-only:
-
-```bash
-pytest tests/unit
-```
-
-Run coverage and generate a report:
-
-```bash
-coverage run --branch -m pytest
-coverage report -m
-```
-
-Generate an HTML coverage report:
-
-```bash
-coverage run --branch -m pytest && coverage html
-# open htmlcov/index.html
-```
-
-### Running UI (Selenium) tests
-
-This project uses `webdriver-manager` to simplify WebDriver installation. To run UI tests headless (recommended for CI):
-
-```bash
-# example: run the e2e tests with headless chrome via environment variable (tests may read this)
-pytest tests/e2e -k "not slow" -q
-```
-
-If your tests require a visible browser, omit headless configuration or set your WebDriver accordingly.
-
-### Useful pytest flags
-
-- `-k <expr>`: run subset matching an expression
-- `-m <marker>`: run tests marked with a pytest marker
-- `-q` / `-vv`: quiet or verbose
-- `-n auto` (with `pytest-xdist`): run tests in parallel
-
-### Test reporting & automation dashboard
-
-The repository contains a small test dashboard app for viewing saved test results and screenshots (if present):
-
-```bash
-python test_dashboard/app.py
-```
-
-Open the dashboard at `http://localhost:5001`.
-
-CI systems can also export `pytest-json-report` or `pytest-html` reports; this repo includes helpers to generate those formats.
+- **Backend:** Python 3.11, Flask, Flask-SQLAlchemy, Flask-Login, Flask-Bcrypt, PyMySQL
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (for i18n), Bootstrap 5, FontAwesome
+- **Database:** MySQL 8.0
+- **DevOps:** Docker, Docker Compose, Gunicorn
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**  
-```bash
-git clone https://github.com/Mohamed-Abdelhakeem-x/Supplements-Store.git
-cd Supplements-Store
-```
+### Prerequisites
+- Docker and Docker Compose installed on your machine.
 
-2. **Install dependencies**  
-```bash
-pip install -r requirements.txt
-```
+### Running with Docker (Recommended)
 
-3. **Run the app**  
-```bash
-flask run
-```
+The easiest way to get the application up and running is by using Docker Compose.
 
-4. **Or run via Docker**  
-```bash
-docker pull mohamedabdelhakeem/prime-supplements
-docker run -p 3000:3000 mohamedabdelhakeem/prime-supplements
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Zeus62/bookstore.git
+   cd bookstore
+   ```
+
+2. **Build and start the containers:**
+   ```bash
+   docker compose up --build -d
+   ```
+
+3. **Access the application:**
+   Open your web browser and navigate to:
+   [http://localhost:3000](http://localhost:3000)
+
+4. **Stopping the application:**
+   ```bash
+   docker compose down
+   ```
+
+### Running Locally (Without Docker)
+
+1. **Create and activate a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up the Database URI (Optional):**
+   By default, the app expects a MySQL connection. You can set it as an environment variable:
+   ```bash
+   export DATABASE_URI="mysql+pymysql://username:password@localhost/dbname"
+   ```
+
+4. **Run the Flask application:**
+   ```bash
+   python app.py
+   ```
 
 ## 📂 Project Structure
 
-```
-Prime_Supplements/
-│
-├── Main/           # Home, About, and Shop routes
-├── users/          # Registration, login, logout
-├── cart/           # Cart logic and cart pages
-├── Review/         # User review system
-├── models.py       # SQLAlchemy models
-├── forms/          # WTForms for auth, cart, and reviews
-├── templates/      # HTML pages
-├── static/         # CSS, JS, Images
-│
-tests/
-│
-├── unit/           # Unit tests: isolated service and helper logic (tests/unit)
-├── integration/    # Integration tests: Flask routes, DB interactions (tests/integration)
-├── ui/             # UI tests: older UI-focused tests (Selenium based, if used)
-├── e2e/            # End-to-end tests: full browser flows and user scenarios (tests/e2e)
-│
-test_dashboard/    # Small Flask app that visualizes test reports and screenshots
-│
-├── templates/      # Dashboard HTML templates used by the app
-│
+```text
+.
+├── Book_Store/              # Main Application Package
+│   ├── Main/                # Core routes (Home, Books, About)
+│   ├── reviews/             # Review system routes
+│   ├── users/               # Authentication routes
+│   ├── static/              # CSS, JS, and i18n JSON files
+│   ├── templates/           # Jinja2 HTML templates
+│   ├── __init__.py          # App factory and configuration
+│   └── models.py            # SQLAlchemy database models
+├── Dockerfile               # Docker configuration for the web app
+├── docker-compose.yml       # Multi-container orchestration (Web + MySQL)
+├── requirements.txt         # Python package dependencies
+└── app.py                   # Application entry point
 ```
 
-## 📸 Screenshots
-![Login Page](Screenshots/LoginPage.png)
-![Shopping Page](Screenshots/ShoppingPage.png)
-![Cart Page](Screenshots/CartPage.png)
+## 🐳 Docker Hub Repository
 
-## 🔗 Links
+The pre-built Docker image for this application is available on Docker Hub:
+**[ahmeesmat/bookstore](https://hub.docker.com/r/ahmeesmat/bookstore)**
 
-- 🐙 GitHub: [Supplements-Store](https://github.com/Mohamed-Abdelhakeem-x/Supplements-Store)
-- 🐳 Docker Hub: [`mohamedabdelhakeem/prime-supplements`](https://hub.docker.com/r/mohamedabdelhakeem/prime-supplements)
-
-### 🐳 How to Pull and Run the Project
-
-Since the application uses a MySQL database, the easiest way to run it is using Docker Compose. 
-
-**Step 1:** Create a file named `docker-compose.yml` anywhere on your computer and paste the following into it:
-```yaml
-version: '3.8'
-
-services:
-  web:
-    image: mohamedabdelhakeem/prime-supplements:latest
-    ports:
-      - "3000:3000"
-    environment:
-      - FLASK_APP=app.py
-      - FLASK_DEBUG=0
-      - DATABASE_URI=mysql+pymysql://root:192003@db:3306/Prime
-    depends_on:
-      db:
-        condition: service_started
-    restart: unless-stopped
-
-  db:
-    image: mysql:8.0
-    ports:
-      - "3307:3306"
-    environment:
-      - MYSQL_DATABASE=Prime
-      - MYSQL_ROOT_PASSWORD=192003
-    volumes:
-      - mysql_data:/var/lib/mysql
-    restart: unless-stopped
-
-volumes:
-  mysql_data:
-```
-
-**Step 2:** Open a terminal in that folder and run:
+To pull and run the image directly:
 ```bash
-docker compose up -d
+docker pull ahmeesmat/bookstore:latest
+docker run -p 3000:3000 ahmeesmat/bookstore:latest
 ```
-Docker will automatically pull the image and the database, link them, and start the app at `http://localhost:3000`.
-## 👨‍💻 Author
 
-**Mohamed Abdelhakeem**  
-An aspiring Software Engineer passionate about building modern, scalable applications.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Zeus62/bookstore/issues).
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
----
-
-**Feel free to contribute and enhance the project! 🚀**
+This project is licensed under the MIT License - see the LICENSE file for details.

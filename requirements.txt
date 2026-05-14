@@ -9,16 +9,3 @@ email-validator
 gunicorn
 pyOpenSSL
 cryptography
-
-# Testing / CI
-pytest
-pytest-cov
-pytest-xdist
-coverage
-selenium
-webdriver-manager
-pytest-json-report
-pytest-html
-
-# Optional
-requests

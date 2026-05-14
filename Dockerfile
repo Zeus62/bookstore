@@ -14,6 +14,3 @@ RUN openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -day
 EXPOSE 3000
 
 CMD ["gunicorn", "--certfile=cert.pem", "--keyfile=key.pem", "-b", "0.0.0.0:3000", "app:app"]
-
-# docker pull mohamedabdelhakeem/prime-supplements:latest
-#docker run -p 3000:3000 mohamedabdelhakeem/prime-supplements:latest

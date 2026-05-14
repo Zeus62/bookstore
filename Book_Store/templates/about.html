@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+    <!-- Heading -->
+    <h2 class="heading" data-i18n="about.heading">About Us</h2>
+    <!-- About Us -->
+    <p class="about-us-p" data-i18n="about.about_p">
+        Welcome to Book Store — where stories come alive! We are passionate about connecting readers
+        with the books they love. Whether you are searching for a timeless classic, a thrilling page-turner,
+        or a thought-provoking masterpiece, we have got you covered. Our curated collection spans every genre,
+        and our team is always here to help you find your next great read.
+    </p>
+    <!-- Features -->
+    <div class="features-container">
+        <div class="feature-box">
+            <h3 data-i18n="about.free_shipping">Free Shipping</h3>
+            <p data-i18n="about.free_shipping_desc">On All Orders Over $50</p>
+        </div>
+        <div class="feature-box">
+            <h3 data-i18n="about.easy_returns">Easy Returns</h3>
+            <p data-i18n="about.easy_returns_desc">14 Day Returns Policy</p>
+        </div>
+        <div class="feature-box">
+            <h3 data-i18n="about.secure_payment">Secure Payment</h3>
+            <p data-i18n="about.secure_payment_desc">100% Secure Guarantee</p>
+        </div>
+        <div class="feature-box">
+            <h3 data-i18n="about.special_support">Special Support</h3>
+            <p data-i18n="about.special_support_desc">24/7 Dedicated Support</p>
+        </div>
+    </div>
+{% endblock %}
