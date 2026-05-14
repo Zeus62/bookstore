@@ -5,6 +5,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
+      - .:/app
       - ./instance:/app/instance
     environment:
       - FLASK_APP=app.py
