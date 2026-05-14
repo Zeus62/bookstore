@@ -68,6 +68,15 @@
                         </ul>
                     </li>
                     {% if current_user.is_authenticated %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('shop.view_cart') }}">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span data-i18n="nav.cart">Cart</span>
+                                {% if cart_count and cart_count > 0 %}
+                                <span class="badge bg-success rounded-pill">{{ cart_count }}</span>
+                                {% endif %}
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user nav-icon" style="color:black;"></i><span data-i18n="nav.welcome">Welcome,</span> <span style="color:#2c6b4f;">{{ current_user.username }}</span>

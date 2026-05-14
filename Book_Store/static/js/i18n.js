@@ -23,19 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function setLanguage(lang) {
-    localStorage.setItem('lang', lang);
-    document.documentElement.lang = lang;
-    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-    updateActiveSwitcher(lang);
-
-    try {
-        const response = await fetch(`/static/i18n/${lang}.json`);
-        if (response.ok) {
-            currentTranslations = await response.json();
-            applyTranslations();
-        }
-    } catch (error) {
-        console.error('Error fetching translations:', error);
+    if (localStorage.getItem('lang') !== lang) {
+        localStorage.setItem('lang', lang);
+        location.reload();
     }
 }
 
