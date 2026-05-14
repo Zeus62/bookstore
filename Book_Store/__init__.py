@@ -50,10 +50,12 @@ init_db()
 from Book_Store.Main.routes import main
 from Book_Store.users.routes import users
 from Book_Store.reviews.routes import reviews_bp
+from Book_Store.shop.routes import shop
 
 app.register_blueprint(main)
 app.register_blueprint(users)
 app.register_blueprint(reviews_bp)
+app.register_blueprint(shop)
 
 # Delay user loader to break circular dependency
 def set_user_loader():

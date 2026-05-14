@@ -14,6 +14,11 @@
             <p class="book-detail-category"><span data-i18n="books.category_label">Category:</span> <span data-i18n="categories.{{ book.category|replace(' ', '_')|lower }}">{{ book.category }}</span></p>
             <p class="book-detail-description" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.desc">{{ book.description }}</p>
             <p class="book-detail-price">${{ book.price }}</p>
+            {% if current_user.is_authenticated %}
+            <form action="{{ url_for('shop.add_to_cart', book_id=book.id) }}" method="POST" style="margin-top: 20px;">
+                <button type="submit" class="btn btn-lg btn-success" data-i18n="shop.add_to_cart">Add to Cart</button>
+            </form>
+            {% endif %}
         </div>
     </div>
 

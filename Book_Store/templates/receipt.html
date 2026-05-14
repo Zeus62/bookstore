@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5 d-flex justify-content-center">
+    <div class="card shadow-sm p-4 w-100" style="max-width: 600px;">
+        <div class="text-center mb-4">
+            <i class="fa-solid fa-circle-check text-success display-1 mb-3"></i>
+            <h2 data-i18n="shop.order_success">Order Successful!</h2>
+            <p class="text-muted" data-i18n="shop.receipt_message">Thank you for your purchase.</p>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between mb-2">
+            <span data-i18n="shop.order_number">Order Number:</span>
+            <strong>#{{ order.id }}</strong>
+        </div>
+        <div class="d-flex justify-content-between mb-4">
+            <span data-i18n="shop.date">Date:</span>
+            <span>{{ order.date_ordered.strftime('%Y-%m-%d %H:%M') }}</span>
+        </div>
+        
+        <h5 data-i18n="shop.order_summary">Order Summary</h5>
+        <ul class="list-group list-group-flush mb-4">
+            {% for item in order.items %}
+            <li class="list-group-item d-flex justify-content-between px-0">
+                <div>
+                    <strong>{{ item.book.title }}</strong> x {{ item.quantity }}
+                </div>
+                <span>${{ "%.2f"|format(item.price * item.quantity) }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        
+        <div class="d-flex justify-content-between h4">
+            <span data-i18n="shop.total_paid">Total Paid:</span>
+            <span>${{ "%.2f"|format(order.total_price) }}</span>
+        </div>
+        
+        <div class="mt-5 text-center">
+            <a href="{{ url_for('main.books') }}" class="btn btn-outline-primary" data-i18n="shop.continue_shopping">Continue Shopping</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

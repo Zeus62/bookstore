@@ -42,6 +42,11 @@
         <p class="book-author"><i class="fas fa-pen-fancy"></i> {{ book.author }}</p>
         <p class="book-description" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.desc">{{ book.description }}</p>
         <p class="book-price">${{ book.price }}</p>
+        {% if current_user.is_authenticated %}
+        <form action="{{ url_for('shop.add_to_cart', book_id=book.id) }}" method="POST" style="margin-top: 10px;">
+            <button type="submit" class="btn btn-sm btn-outline-success" data-i18n="shop.add_to_cart" style="width: 100%;">Add to Cart</button>
+        </form>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
