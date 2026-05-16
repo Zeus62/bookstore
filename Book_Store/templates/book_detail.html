@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ book.title }} - Book Details{% endblock %}
+{% block title %}{{ _(book.title) }} - {{ _('Book Details') }}{% endblock %}
 
 {% block content %}
 <div class="book-detail-container">
@@ -9,14 +9,14 @@
             <i class="fas fa-book book-detail-icon"></i>
         </div>
         <div class="book-detail-info">
-            <h1 class="book-detail-title" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.name">{{ book.title }}</h1>
+            <h1 class="book-detail-title">{{ _(book.title) }}</h1>
             <p class="book-detail-author"><i class="fas fa-pen-fancy"></i> {{ book.author }}</p>
-            <p class="book-detail-category"><span data-i18n="books.category_label">Category:</span> <span data-i18n="categories.{{ book.category|replace(' ', '_')|lower }}">{{ book.category }}</span></p>
-            <p class="book-detail-description" data-i18n="products.{{ book.title|replace(' ', '_')|lower }}.desc">{{ book.description }}</p>
+            <p class="book-detail-category"><span>{{ _('Category:') }}</span> <span>{{ _(book.category) }}</span></p>
+            <p class="book-detail-description">{{ _(book.description) }}</p>
             <p class="book-detail-price">${{ book.price }}</p>
             {% if current_user.is_authenticated %}
             <form action="{{ url_for('shop.add_to_cart', book_id=book.id) }}" method="POST" style="margin-top: 20px;">
-                <button type="submit" class="btn btn-lg btn-success" data-i18n="shop.add_to_cart">Add to Cart</button>
+                <button type="submit" class="btn btn-lg btn-success">{{ _('Add to Cart') }}</button>
             </form>
             {% endif %}
         </div>
@@ -24,7 +24,7 @@
 
     {% if related_books %}
     <div class="related-books">
-        <h2 data-i18n="books.related_books">Related Books</h2>
+        <h2>{{ _('Related Books') }}</h2>
         <div class="related-books-grid">
             {% for related in related_books %}
             <div class="related-book">
@@ -32,7 +32,7 @@
                     <div class="related-book-cover">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h4 data-i18n="products.{{ related.title|replace(' ', '_')|lower }}.name">{{ related.title }}</h4>
+                    <h4>{{ _(related.title) }}</h4>
                     <p>${{ related.price }}</p>
                 </a>
             </div>

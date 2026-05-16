@@ -11,4 +11,6 @@ COPY . /app
 
 EXPOSE 3000
 
-CMD ["gunicorn", "-b", "0.0.0.0:3000", "app:app"]
+# Generate a self-signed certificate and run gunicorn with it
+CMD openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365 -subj "/CN=localhost" && \
+    gunicorn -b 0.0.0.0:3000 --certfile=cert.pem --keyfile=key.pem app:app

@@ -1,17 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container my-5">
-    <h2 class="mb-4" data-i18n="shop.your_cart">Your Cart</h2>
+    <h2 class="mb-4">{{ _('Your Cart') }}</h2>
     {% if items %}
         <div class="table-responsive">
             <table class="table table-hover align-middle">
                 <thead class="table-light">
                     <tr>
-                        <th data-i18n="shop.book">Book</th>
-                        <th data-i18n="shop.price">Price</th>
-                        <th data-i18n="shop.quantity">Quantity</th>
-                        <th data-i18n="shop.subtotal">Subtotal</th>
-                        <th data-i18n="shop.actions">Actions</th>
+                        <th>{{ _('Book') }}</th>
+                        <th>{{ _('Price') }}</th>
+                        <th>{{ _('Quantity') }}</th>
+                        <th>{{ _('Subtotal') }}</th>
+                        <th>{{ _('Actions') }}</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,7 +29,7 @@
                         <td>${{ "%.2f"|format(item.book.price * item.quantity) }}</td>
                         <td>
                             <form action="{{ url_for('shop.update_cart', item_id=item.id) }}" method="POST">
-                                <button type="submit" name="action" value="remove" class="btn btn-sm btn-danger" data-i18n="shop.remove">Remove</button>
+                                <button type="submit" name="action" value="remove" class="btn btn-sm btn-danger">{{ _('Remove') }}</button>
                             </form>
                         </td>
                     </tr>
@@ -40,18 +40,18 @@
         <div class="d-flex justify-content-end mt-4">
             <div class="card p-3" style="width: 300px;">
                 <div class="d-flex justify-content-between mb-3">
-                    <strong data-i18n="shop.total">Total:</strong>
+                    <strong>{{ _('Total:') }}</strong>
                     <strong>${{ "%.2f"|format(total) }}</strong>
                 </div>
                 <form action="{{ url_for('shop.checkout') }}" method="POST">
-                    <button type="submit" class="btn btn-primary w-100" data-i18n="shop.checkout_btn">Proceed to Checkout</button>
+                    <button type="submit" class="btn btn-primary w-100">{{ _('Proceed to Checkout') }}</button>
                 </form>
             </div>
         </div>
     {% else %}
         <div class="alert alert-info text-center p-5">
-            <h4 data-i18n="shop.empty_cart">Your cart is currently empty.</h4>
-            <a href="{{ url_for('main.books') }}" class="btn btn-primary mt-3" data-i18n="shop.continue_shopping">Continue Shopping</a>
+            <h4>{{ _('Your cart is currently empty.') }}</h4>
+            <a href="{{ url_for('main.books') }}" class="btn btn-primary mt-3">{{ _('Continue Shopping') }}</a>
         </div>
     {% endif %}
 </div>

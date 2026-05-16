@@ -1,13 +1,28 @@
-from flask import Flask
+from flask import Flask, request, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_babel import Babel
 
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'bookstore_secret_key_2025'
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
+
+app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'ar', 'fr', 'de']
+app.config['BABEL_TRANSLATION_DIRECTORIES'] = os.path.join(basedir, 'translations')
+
+def get_locale():
+    # if a user is logged in or has a session preference, use that
+    if session.get('lang'):
+        return session.get('lang')
+    # otherwise try to guess the language from the user accept
+    # header the browser transmits.
+    return request.accept_languages.best_match(app.config['BABEL_SUPPORTED_LOCALES'])
+
+babel = Babel(app, locale_selector=get_locale)
 
 # Use DATABASE_URI from environment variables if running in Docker, else fallback to a default local MySQL connection
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
@@ -20,7 +35,7 @@ bcrypt = Bcrypt(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'login'
+login_manager.login_view = 'users.login'
 
 
 def init_db():

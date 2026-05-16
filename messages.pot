@@ -1,0 +1,348 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-05-16 04:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: Book_Store/templates/about.html:7
+msgid "About Us"
+msgstr ""
+
+#: Book_Store/templates/about.html:9
+msgid ""
+"Welcome to Book Store — where stories come alive! We are passionate about"
+" connecting readers with the books they love. Whether you are searching "
+"for a timeless classic, a thrilling page-turner, or a thought-provoking "
+"masterpiece, we have got you covered."
+msgstr ""
+
+#: Book_Store/templates/about.html:13
+msgid "Free Shipping"
+msgstr ""
+
+#: Book_Store/templates/about.html:14
+msgid "On All Orders Over $50"
+msgstr ""
+
+#: Book_Store/templates/about.html:17
+msgid "Easy Returns"
+msgstr ""
+
+#: Book_Store/templates/about.html:18
+msgid "14 Day Returns Policy"
+msgstr ""
+
+#: Book_Store/templates/about.html:21
+msgid "Secure Payment"
+msgstr ""
+
+#: Book_Store/templates/about.html:22
+msgid "100% Secure Guarantee"
+msgstr ""
+
+#: Book_Store/templates/about.html:25
+msgid "Special Support"
+msgstr ""
+
+#: Book_Store/templates/about.html:26
+msgid "24/7 Dedicated Support"
+msgstr ""
+
+#: Book_Store/templates/base.html:23
+msgid "Browse Books"
+msgstr ""
+
+#: Book_Store/templates/base.html:30 Book_Store/templates/base.html:128
+#: Book_Store/templates/cart.html:10
+msgid "Book"
+msgstr ""
+
+#: Book_Store/templates/base.html:30 Book_Store/templates/base.html:128
+msgid "Store"
+msgstr ""
+
+#: Book_Store/templates/base.html:41 Book_Store/templates/base.html:130
+msgid "Home"
+msgstr ""
+
+#: Book_Store/templates/base.html:46 Book_Store/templates/base.html:131
+msgid "Books"
+msgstr ""
+
+#: Book_Store/templates/base.html:51 Book_Store/templates/base.html:132
+msgid "About"
+msgstr ""
+
+#: Book_Store/templates/base.html:78
+msgid "Cart"
+msgstr ""
+
+#: Book_Store/templates/base.html:86
+msgid "Welcome,"
+msgstr ""
+
+#: Book_Store/templates/base.html:89
+msgid "Reviews"
+msgstr ""
+
+#: Book_Store/templates/base.html:90
+msgid "Sign out"
+msgstr ""
+
+#: Book_Store/templates/base.html:97 Book_Store/templates/reviews.html:29
+msgid "Login"
+msgstr ""
+
+#: Book_Store/templates/base.html:102
+msgid "Sign Up"
+msgstr ""
+
+#: Book_Store/templates/base.html:135
+msgid "© 2025 Book Store. All rights reserved."
+msgstr ""
+
+#: Book_Store/templates/book_detail.html:14
+msgid "Category:"
+msgstr ""
+
+#: Book_Store/templates/book_detail.html:19 Book_Store/templates/books.html:46
+msgid "Add to Cart"
+msgstr ""
+
+#: Book_Store/templates/book_detail.html:27
+msgid "Related Books"
+msgstr ""
+
+#: Book_Store/templates/books.html:11
+msgid "Search books..."
+msgstr ""
+
+#: Book_Store/templates/books.html:16
+msgid "All Categories"
+msgstr ""
+
+#: Book_Store/templates/books.html:23
+msgid "Filter"
+msgstr ""
+
+#: Book_Store/templates/books.html:55
+msgid "No books found matching your search or filter."
+msgstr ""
+
+#: Book_Store/templates/cart.html:4
+msgid "Your Cart"
+msgstr ""
+
+#: Book_Store/templates/cart.html:11
+msgid "Price"
+msgstr ""
+
+#: Book_Store/templates/cart.html:12
+msgid "Quantity"
+msgstr ""
+
+#: Book_Store/templates/cart.html:13
+msgid "Subtotal"
+msgstr ""
+
+#: Book_Store/templates/cart.html:14
+msgid "Actions"
+msgstr ""
+
+#: Book_Store/templates/cart.html:32
+msgid "Remove"
+msgstr ""
+
+#: Book_Store/templates/cart.html:43
+msgid "Total:"
+msgstr ""
+
+#: Book_Store/templates/cart.html:47
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: Book_Store/templates/cart.html:53
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: Book_Store/templates/cart.html:54 Book_Store/templates/receipt.html:38
+msgid "Continue Shopping"
+msgstr ""
+
+#: Book_Store/templates/home.html:10
+msgid "Book Store"
+msgstr ""
+
+#: Book_Store/templates/home.html:11
+msgid ""
+"Welcome to Book Store, your destination for discovering timeless classics"
+" and modern masterpieces. We offer a curated collection of books across "
+"all genres — from fiction and fantasy to philosophy and science fiction. "
+"Whether you are a casual reader or a devoted bookworm, you will find "
+"something to love in our collection."
+msgstr ""
+
+#: Book_Store/templates/home.html:12 Book_Store/templates/home.html:108
+msgid "Browse Collection"
+msgstr ""
+
+#: Book_Store/templates/home.html:21
+msgid "Our Categories"
+msgstr ""
+
+#: Book_Store/templates/home.html:34
+msgid "Fiction"
+msgstr ""
+
+#: Book_Store/templates/home.html:36
+msgid "Dive into captivating stories and unforgettable characters."
+msgstr ""
+
+#: Book_Store/templates/home.html:39 Book_Store/templates/home.html:56
+#: Book_Store/templates/home.html:73
+msgid "Browse"
+msgstr ""
+
+#: Book_Store/templates/home.html:51
+msgid "Fantasy"
+msgstr ""
+
+#: Book_Store/templates/home.html:53
+msgid "Explore magical worlds and epic adventures beyond imagination."
+msgstr ""
+
+#: Book_Store/templates/home.html:68
+msgid "Philosophy"
+msgstr ""
+
+#: Book_Store/templates/home.html:70
+msgid "Discover wisdom and ideas that have shaped human thought."
+msgstr ""
+
+#: Book_Store/templates/home.html:86
+msgid "Vision"
+msgstr ""
+
+#: Book_Store/templates/home.html:87
+msgid ""
+"At Book Store, our vision is to inspire a love of reading in every "
+"person. We believe that books have the power to transform lives, broaden "
+"perspectives, and connect people across cultures and generations."
+msgstr ""
+
+#: Book_Store/templates/home.html:95
+msgid "Mission"
+msgstr ""
+
+#: Book_Store/templates/home.html:96
+msgid ""
+"Our mission is to provide readers with easy access to a diverse selection"
+" of quality books at affordable prices, while creating a welcoming "
+"community for book lovers everywhere."
+msgstr ""
+
+#: Book_Store/templates/home.html:106
+msgid "Welcome Back, Reader!"
+msgstr ""
+
+#: Book_Store/templates/home.html:107
+msgid "Explore our latest collection and leave your reviews."
+msgstr ""
+
+#: Book_Store/templates/home.html:114
+msgid "Join Our Community"
+msgstr ""
+
+#: Book_Store/templates/home.html:115
+msgid "Sign up to leave reviews and get personalized recommendations."
+msgstr ""
+
+#: Book_Store/templates/home.html:116
+msgid "Login Now!"
+msgstr ""
+
+#: Book_Store/templates/login.html:11
+msgid "Log In"
+msgstr ""
+
+#: Book_Store/templates/login.html:51
+msgid "Need An Account?"
+msgstr ""
+
+#: Book_Store/templates/login.html:52
+msgid "Sign Up Here"
+msgstr ""
+
+#: Book_Store/templates/receipt.html:7
+msgid "Order Successful!"
+msgstr ""
+
+#: Book_Store/templates/receipt.html:8
+msgid "Thank you for your purchase."
+msgstr ""
+
+#: Book_Store/templates/receipt.html:12
+msgid "Order Number:"
+msgstr ""
+
+#: Book_Store/templates/receipt.html:16
+msgid "Date:"
+msgstr ""
+
+#: Book_Store/templates/receipt.html:20
+msgid "Order Summary"
+msgstr ""
+
+#: Book_Store/templates/receipt.html:33
+msgid "Total Paid:"
+msgstr ""
+
+#: Book_Store/templates/reviews.html:5
+msgid "Your Reviews"
+msgstr ""
+
+#: Book_Store/templates/reviews.html:29
+msgid "to post a review."
+msgstr ""
+
+#: Book_Store/templates/reviews.html:37
+msgid "by"
+msgstr ""
+
+#: Book_Store/templates/reviews.html:39
+msgid "Edit"
+msgstr ""
+
+#: Book_Store/templates/reviews.html:41
+msgid "Delete"
+msgstr ""
+
+#: Book_Store/templates/reviews.html:47
+msgid "No reviews yet — be the first to leave one!"
+msgstr ""
+
+#: Book_Store/templates/signup.html:8
+msgid "Create an Account"
+msgstr ""
+
+#: Book_Store/templates/signup.html:61
+msgid "Already have an Account?"
+msgstr ""
+
+#: Book_Store/templates/signup.html:62
+msgid "Sign in"
+msgstr ""
+

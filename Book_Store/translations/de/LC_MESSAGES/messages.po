@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Browse Books"
+msgstr "Bücher Durchsuchen"
+
+msgid "Book"
+msgstr "Buch"
+
+msgid "Store"
+msgstr "Laden"
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "Books"
+msgstr "Bücher"
+
+msgid "About"
+msgstr "Über uns"
+
+msgid "Welcome,"
+msgstr "Willkommen,"
+
+msgid "Reviews"
+msgstr "Bewertungen"
+
+msgid "Cart"
+msgstr "Warenkorb"
+
+msgid "Sign out"
+msgstr "Abmelden"
+
+msgid "Login"
+msgstr "Anmelden"
+
+msgid "Sign Up"
+msgstr "Registrieren"
+
+msgid "Book Store"
+msgstr "Buchladen"
+
+msgid "Welcome to Book Store, your destination for discovering timeless classics and modern masterpieces. We offer a curated collection of books across all genres — from fiction and fantasy to philosophy and science fiction. Whether you are a casual reader or a devoted bookworm, you will find something to love in our collection."
+msgstr "Willkommen im Buchladen, Ihrem Ziel für zeitlose Klassiker und moderne Meisterwerke. Wir bieten eine handverlesene Sammlung von Büchern aus allen Genres – von Fiktion und Fantasy bis hin zu Philosophie und Science-Fiction."
+
+msgid "Browse Collection"
+msgstr "Sammlung Durchsuchen"
+
+msgid "Our Categories"
+msgstr "Unsere Kategorien"
+
+msgid "Fiction"
+msgstr "Fiktion"
+
+msgid "Dive into captivating stories and unforgettable characters."
+msgstr "Tauchen Sie in fesselnde Geschichten und unvergessliche Charaktere ein."
+
+msgid "Fantasy"
+msgstr "Fantasy"
+
+msgid "Explore magical worlds and epic adventures beyond imagination."
+msgstr "Erkunden Sie magische Welten und epische Abenteuer jenseits der Vorstellungskraft."
+
+msgid "Philosophy"
+msgstr "Philosophie"
+
+msgid "Discover wisdom and ideas that have shaped human thought."
+msgstr "Entdecken Sie Weisheit und Ideen, die das menschliche Denken geprägt haben."
+
+msgid "Browse"
+msgstr "Durchsuchen"
+
+msgid "Vision"
+msgstr "Vision"
+
+msgid "At Book Store, our vision is to inspire a love of reading in every person. We believe that books have the power to transform lives, broaden perspectives, and connect people across cultures and generations."
+msgstr "Unsere Vision ist es, die Liebe zum Lesen in jedem Menschen zu wecken. Wir glauben, dass Bücher die Kraft haben, Leben zu verändern und Perspektiven zu erweitern."
+
+msgid "Mission"
+msgstr "Mission"
+
+msgid "Our mission is to provide readers with easy access to a diverse selection of quality books at affordable prices, while creating a welcoming community for book lovers everywhere."
+msgstr "Unsere Mission ist es, Lesern einfachen Zugang zu einer vielfältigen Auswahl hochwertiger Bücher zu erschwinglichen Preisen zu bieten."
+
+msgid "Welcome Back, Reader!"
+msgstr "Willkommen zurück, Leser!"
+
+msgid "Explore our latest collection and leave your reviews."
+msgstr "Entdecken Sie unsere neueste Sammlung und hinterlassen Sie Ihre Bewertungen."
+
+msgid "Join Our Community"
+msgstr "Treten Sie unserer Community bei"
+
+msgid "Sign up to leave reviews and get personalized recommendations."
+msgstr "Melden Sie sich an, um Bewertungen zu hinterlassen und personalisierte Empfehlungen zu erhalten."
+
+msgid "Login Now!"
+msgstr "Jetzt anmelden!"
+
+msgid "About Us"
+msgstr "Über Uns"
+
+msgid "Welcome to Book Store — where stories come alive! We are passionate about connecting readers with the books they love. Whether you are searching for a timeless classic, a thrilling page-turner, or a thought-provoking masterpiece, we have got you covered."
+msgstr "Willkommen im Buchladen — wo Geschichten lebendig werden! Wir verbinden leidenschaftlich gerne Leser mit den Büchern, die sie lieben."
+
+msgid "Free Shipping"
+msgstr "Kostenloser Versand"
+
+msgid "On All Orders Over $50"
+msgstr "Für alle Bestellungen über 50$"
+
+msgid "Easy Returns"
+msgstr "Einfache Rückgabe"
+
+msgid "14 Day Returns Policy"
+msgstr "14 Tage Rückgaberecht"
+
+msgid "Secure Payment"
+msgstr "Sichere Zahlung"
+
+msgid "100% Secure Guarantee"
+msgstr "100% Sicherheitsgarantie"
+
+msgid "Special Support"
+msgstr "Spezieller Support"
+
+msgid "24/7 Dedicated Support"
+msgstr "24/7 Engagierter Support"
+
+msgid "Search books..."
+msgstr "Bücher suchen..."
+
+msgid "Search"
+msgstr "Suchen"
+
+msgid "All Categories"
+msgstr "Alle Kategorien"
+
+msgid "Filter"
+msgstr "Filtern"
+
+msgid "No books found matching your search or filter."
+msgstr "Keine Bücher gefunden, die Ihrer Suche entsprechen."
+
+msgid "Category:"
+msgstr "Kategorie:"
+
+msgid "Related Books"
+msgstr "Ähnliche Bücher"
+
+msgid "Log In"
+msgstr "Anmelden"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Log In"
+msgstr "Anmelden"
+
+msgid "Remember Me"
+msgstr "Angemeldet bleiben"
+
+msgid "Need An Account?"
+msgstr "Brauchen Sie ein Konto?"
+
+msgid "Sign Up Here"
+msgstr "Hier registrieren"
+
+msgid "Create an Account"
+msgstr "Konto Erstellen"
+
+msgid "Username"
+msgstr "Benutzername"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+msgid "Password"
+msgstr "Passwort"
+
+msgid "Confirm Password"
+msgstr "Passwort bestätigen"
+
+msgid "Sign Up"
+msgstr "Registrieren"
+
+msgid "Already have an Account?"
+msgstr "Haben Sie bereits ein Konto?"
+
+msgid "Sign in"
+msgstr "Anmelden"
+
+msgid "Your Reviews"
+msgstr "Ihre Bewertungen"
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "Submit Review"
+msgstr "Bewertung abgeben"
+
+msgid "Login"
+msgstr "Anmelden"
+
+msgid "to post a review."
+msgstr "um eine Bewertung abzugeben."
+
+msgid "by"
+msgstr "von"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "No reviews yet — be the first to leave one!"
+msgstr "Noch keine Bewertungen — seien Sie der Erste!"
+
+msgid "Book"
+msgstr "Buch"
+
+msgid "Store"
+msgstr "Laden"
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "Books"
+msgstr "Bücher"
+
+msgid "About"
+msgstr "Über uns"
+
+msgid "© 2025 Book Store. All rights reserved."
+msgstr "© 2025 Buchladen. Alle Rechte vorbehalten."
+
+msgid "Fiction"
+msgstr "Fiktion"
+
+msgid "Science Fiction"
+msgstr "Science-Fiction"
+
+msgid "Romance"
+msgstr "Romantik"
+
+msgid "Fantasy"
+msgstr "Fantasie"
+
+msgid "Philosophy"
+msgstr "Philosophie"
+
+msgid "Add to Cart"
+msgstr "In den Warenkorb"
+
+msgid "Your Cart"
+msgstr "Ihr Warenkorb"
+
+msgid "Book"
+msgstr "Buch"
+
+msgid "Price"
+msgstr "Preis"
+
+msgid "Quantity"
+msgstr "Menge"
+
+msgid "Subtotal"
+msgstr "Zwischensumme"
+
+msgid "Actions"
+msgstr "Aktionen"
+
+msgid "Remove"
+msgstr "Entfernen"
+
+msgid "Total:"
+msgstr "Gesamt:"
+
+msgid "Proceed to Checkout"
+msgstr "Zur Kasse"
+
+msgid "Your cart is currently empty."
+msgstr "Ihr Warenkorb ist derzeit leer."
+
+msgid "Continue Shopping"
+msgstr "Weiter einkaufen"
+
+msgid "Order Successful!"
+msgstr "Bestellung erfolgreich!"
+
+msgid "Thank you for your purchase."
+msgstr "Vielen Dank für Ihren Einkauf."
+
+msgid "Order Number:"
+msgstr "Bestellnummer:"
+
+msgid "Date:"
+msgstr "Datum:"
+
+msgid "Order Summary"
+msgstr "Bestellübersicht"
+
+msgid "Total Paid:"
+msgstr "Gezahlter Gesamtbetrag:"
+
+msgid "The Great Gatsby"
+msgstr "Der große Gatsby"
+
+msgid "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
+msgstr "Eine Geschichte über den fabelhaft reichen Jay Gatsby und seine Liebe zu Daisy Buchanan."
+
+msgid "To Kill a Mockingbird"
+msgstr "Wer die Nachtigall stört"
+
+msgid "A novel about racial injustice in the Deep South through the eyes of a child."
+msgstr "Ein Roman über rassistische Ungerechtigkeit im tiefen Süden aus der Sicht eines Kindes."
+
+msgid "1984"
+msgstr "1984"
+
+msgid "A dystopian novel set in a totalitarian society under constant surveillance."
+msgstr "Ein dystopischer Roman, der in einer totalitären Gesellschaft unter ständiger Überwachung spielt."
+
+msgid "Pride and Prejudice"
+msgstr "Stolz und Vorurteil"
+
+msgid "A romantic novel about the Bennet family and the proud Mr. Darcy."
+msgstr "Ein romantischer Roman über die Familie Bennet und den stolzen Mr. Darcy."
+
+msgid "The Catcher in the Rye"
+msgstr "Der Fänger im Roggen"
+
+msgid "A story about teenage rebellion and alienation in 1950s America."
+msgstr "Eine Geschichte über jugendliche Rebellion und Entfremdung im Amerika der 1950er Jahre."
+
+msgid "Harry Potter"
+msgstr "Harry Potter"
+
+msgid "A young wizard discovers his magical heritage and attends Hogwarts."
+msgstr "Ein junger Zauberer entdeckt sein magisches Erbe und besucht Hogwarts."
+
+msgid "The Lord of the Rings"
+msgstr "Der Herr der Ringe"
+
+msgid "An epic fantasy adventure to destroy the One Ring and save Middle-earth."
+msgstr "Ein episches Fantasy-Abenteuer, um den Einen Ring zu zerstören und Mittelerde zu retten."
+
+msgid "The Alchemist"
+msgstr "Der Alchimist"
+
+msgid "A shepherd boy travels from Spain to Egypt in search of treasure."
+msgstr "Ein Hirtenjunge reist von Spanien nach Ägypten auf der Suche nach einem Schatz."
+

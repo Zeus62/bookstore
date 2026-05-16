@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Browse Books"
+msgstr "تصفح الكتب"
+
+msgid "Book"
+msgstr "متجر"
+
+msgid "Store"
+msgstr "الكتب"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Books"
+msgstr "الكتب"
+
+msgid "About"
+msgstr "من نحن"
+
+msgid "Welcome,"
+msgstr "مرحباً،"
+
+msgid "Reviews"
+msgstr "التقييمات"
+
+msgid "Cart"
+msgstr "السلة"
+
+msgid "Sign out"
+msgstr "تسجيل خروج"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Sign Up"
+msgstr "إنشاء حساب"
+
+msgid "Book Store"
+msgstr "متجر الكتب"
+
+msgid "Welcome to Book Store, your destination for discovering timeless classics and modern masterpieces. We offer a curated collection of books across all genres — from fiction and fantasy to philosophy and science fiction. Whether you are a casual reader or a devoted bookworm, you will find something to love in our collection."
+msgstr "مرحباً بكم في متجر الكتب، وجهتكم لاكتشاف الكلاسيكيات الخالدة والروائع الحديثة. نقدم مجموعة منتقاة من الكتب في جميع الأنواع — من الخيال والفانتازيا إلى الفلسفة والخيال العلمي. سواء كنت قارئاً عادياً أو محباً متعطشاً للكتب، ستجد ما تحبه في مجموعتنا."
+
+msgid "Browse Collection"
+msgstr "تصفح المجموعة"
+
+msgid "Our Categories"
+msgstr "تصنيفاتنا"
+
+msgid "Fiction"
+msgstr "خيال"
+
+msgid "Dive into captivating stories and unforgettable characters."
+msgstr "انغمس في قصص آسرة وشخصيات لا تُنسى."
+
+msgid "Fantasy"
+msgstr "فانتازيا"
+
+msgid "Explore magical worlds and epic adventures beyond imagination."
+msgstr "استكشف عوالم سحرية ومغامرات ملحمية تفوق الخيال."
+
+msgid "Philosophy"
+msgstr "فلسفة"
+
+msgid "Discover wisdom and ideas that have shaped human thought."
+msgstr "اكتشف الحكمة والأفكار التي شكلت الفكر البشري."
+
+msgid "Browse"
+msgstr "تصفح"
+
+msgid "Vision"
+msgstr "رؤيتنا"
+
+msgid "At Book Store, our vision is to inspire a love of reading in every person. We believe that books have the power to transform lives, broaden perspectives, and connect people across cultures and generations."
+msgstr "في متجر الكتب، رؤيتنا هي إلهام حب القراءة في كل شخص. نؤمن بأن الكتب لديها القدرة على تغيير الحياة وتوسيع الآفاق وربط الناس عبر الثقافات والأجيال."
+
+msgid "Mission"
+msgstr "مهمتنا"
+
+msgid "Our mission is to provide readers with easy access to a diverse selection of quality books at affordable prices, while creating a welcoming community for book lovers everywhere."
+msgstr "مهمتنا هي تزويد القراء بسهولة الوصول إلى مجموعة متنوعة من الكتب عالية الجودة بأسعار معقولة، مع إنشاء مجتمع ترحيبي لمحبي الكتب في كل مكان."
+
+msgid "Welcome Back, Reader!"
+msgstr "مرحباً بعودتك أيها القارئ!"
+
+msgid "Explore our latest collection and leave your reviews."
+msgstr "استكشف أحدث مجموعتنا واترك تقييماتك."
+
+msgid "Join Our Community"
+msgstr "انضم إلى مجتمعنا"
+
+msgid "Sign up to leave reviews and get personalized recommendations."
+msgstr "سجل لترك التقييمات والحصول على توصيات مخصصة."
+
+msgid "Login Now!"
+msgstr "سجل الدخول الآن!"
+
+msgid "About Us"
+msgstr "من نحن"
+
+msgid "Welcome to Book Store — where stories come alive! We are passionate about connecting readers with the books they love. Whether you are searching for a timeless classic, a thrilling page-turner, or a thought-provoking masterpiece, we have got you covered."
+msgstr "مرحباً بكم في متجر الكتب — حيث تنبض القصص بالحياة! نحن شغوفون بربط القراء بالكتب التي يحبونها. سواء كنت تبحث عن كلاسيكية خالدة أو رواية مثيرة أو تحفة تثير التفكير، فنحن نغطي احتياجاتك."
+
+msgid "Free Shipping"
+msgstr "شحن مجاني"
+
+msgid "On All Orders Over $50"
+msgstr "على جميع الطلبات فوق 50 دولار"
+
+msgid "Easy Returns"
+msgstr "إرجاع سهل"
+
+msgid "14 Day Returns Policy"
+msgstr "سياسة إرجاع لمدة 14 يومًا"
+
+msgid "Secure Payment"
+msgstr "دفع آمن"
+
+msgid "100% Secure Guarantee"
+msgstr "ضمان أمان 100%"
+
+msgid "Special Support"
+msgstr "دعم خاص"
+
+msgid "24/7 Dedicated Support"
+msgstr "دعم مخصص على مدار 24/7"
+
+msgid "Search books..."
+msgstr "ابحث عن الكتب..."
+
+msgid "Search"
+msgstr "بحث"
+
+msgid "All Categories"
+msgstr "جميع التصنيفات"
+
+msgid "Filter"
+msgstr "تصفية"
+
+msgid "No books found matching your search or filter."
+msgstr "لم يتم العثور على كتب مطابقة لبحثك."
+
+msgid "Category:"
+msgstr "التصنيف:"
+
+msgid "Related Books"
+msgstr "كتب ذات صلة"
+
+msgid "Log In"
+msgstr "تسجيل الدخول"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Log In"
+msgstr "دخول"
+
+msgid "Remember Me"
+msgstr "تذكرني"
+
+msgid "Need An Account?"
+msgstr "ليس لديك حساب؟"
+
+msgid "Sign Up Here"
+msgstr "سجل من هنا"
+
+msgid "Create an Account"
+msgstr "إنشاء حساب"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+msgid "Sign Up"
+msgstr "إنشاء حساب"
+
+msgid "Already have an Account?"
+msgstr "لديك حساب بالفعل؟"
+
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+msgid "Your Reviews"
+msgstr "تقييماتك"
+
+msgid "Title"
+msgstr "العنوان"
+
+msgid "Content"
+msgstr "المحتوى"
+
+msgid "Submit Review"
+msgstr "إرسال التقييم"
+
+msgid "Login"
+msgstr "سجل الدخول"
+
+msgid "to post a review."
+msgstr "لإضافة تقييم."
+
+msgid "by"
+msgstr "بواسطة"
+
+msgid "Edit"
+msgstr "تعديل"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "No reviews yet — be the first to leave one!"
+msgstr "لا توجد تقييمات بعد — كن أول من يضيف تقييماً!"
+
+msgid "Book"
+msgstr "متجر"
+
+msgid "Store"
+msgstr "الكتب"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Books"
+msgstr "الكتب"
+
+msgid "About"
+msgstr "من نحن"
+
+msgid "© 2025 Book Store. All rights reserved."
+msgstr "© 2025 متجر الكتب. جميع الحقوق محفوظة."
+
+msgid "Fiction"
+msgstr "خيالي"
+
+msgid "Science Fiction"
+msgstr "خيال علمي"
+
+msgid "Romance"
+msgstr "رومانسي"
+
+msgid "Fantasy"
+msgstr "فانتازيا"
+
+msgid "Philosophy"
+msgstr "فلسفة"
+
+msgid "Add to Cart"
+msgstr "أضف إلى السلة"
+
+msgid "Your Cart"
+msgstr "سلة التسوق الخاصة بك"
+
+msgid "Book"
+msgstr "الكتاب"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Quantity"
+msgstr "الكمية"
+
+msgid "Subtotal"
+msgstr "المجموع الفرعي"
+
+msgid "Actions"
+msgstr "الإجراءات"
+
+msgid "Remove"
+msgstr "إزالة"
+
+msgid "Total:"
+msgstr "المجموع:"
+
+msgid "Proceed to Checkout"
+msgstr "متابعة الدفع"
+
+msgid "Your cart is currently empty."
+msgstr "سلة التسوق فارغة حالياً."
+
+msgid "Continue Shopping"
+msgstr "مواصلة التسوق"
+
+msgid "Order Successful!"
+msgstr "تم الطلب بنجاح!"
+
+msgid "Thank you for your purchase."
+msgstr "شكراً لشرائك."
+
+msgid "Order Number:"
+msgstr "رقم الطلب:"
+
+msgid "Date:"
+msgstr "التاريخ:"
+
+msgid "Order Summary"
+msgstr "ملخص الطلب"
+
+msgid "Total Paid:"
+msgstr "إجمالي المدفوع:"
+
+msgid "The Great Gatsby"
+msgstr "غاتسبي العظيم"
+
+msgid "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
+msgstr "قصة جاي غاتسبي الثري وحبه لديزي بيوكانان."
+
+msgid "To Kill a Mockingbird"
+msgstr "أن تقتل طائراً بريئاً"
+
+msgid "A novel about racial injustice in the Deep South through the eyes of a child."
+msgstr "رواية عن الظلم العنصري في الجنوب العميق من خلال عيون طفل."
+
+msgid "1984"
+msgstr "1984"
+
+msgid "A dystopian novel set in a totalitarian society under constant surveillance."
+msgstr "رواية ديستوبية تدور في مجتمع استبدادي تحت المراقبة المستمرة."
+
+msgid "Pride and Prejudice"
+msgstr "كبرياء وتحامل"
+
+msgid "A romantic novel about the Bennet family and the proud Mr. Darcy."
+msgstr "رواية رومانسية عن عائلة بينيت والسيد دارسي المتكبر."
+
+msgid "The Catcher in the Rye"
+msgstr "الحارس في حقل الشوفان"
+
+msgid "A story about teenage rebellion and alienation in 1950s America."
+msgstr "قصة عن تمرد المراهقين والاغتراب في أمريكا الخمسينيات."
+
+msgid "Harry Potter"
+msgstr "هاري بوتر"
+
+msgid "A young wizard discovers his magical heritage and attends Hogwarts."
+msgstr "ساحر شاب يكتشف تراثه السحري ويلتحق بهوجوورتس."
+
+msgid "The Lord of the Rings"
+msgstr "سيد الخواتم"
+
+msgid "An epic fantasy adventure to destroy the One Ring and save Middle-earth."
+msgstr "مغامرة فانتازيا ملحمية لتدمير الخاتم الواحد وإنقاذ الأرض الوسطى."
+
+msgid "The Alchemist"
+msgstr "الخيميائي"
+
+msgid "A shepherd boy travels from Spain to Egypt in search of treasure."
+msgstr "صبي راعٍ يسافر من إسبانيا إلى مصر بحثاً عن الكنز."
+

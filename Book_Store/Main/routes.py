@@ -1,13 +1,20 @@
 from Book_Store.Main import main
 from Book_Store.models import Book
 from Book_Store import db
-from flask import render_template, request
+from flask import render_template, request, session, redirect, url_for
 
 
 @main.route('/')
 @main.route("/home", methods=['GET', 'POST'])
 def home():
     return render_template('home.html', title="Home")
+
+
+@main.route('/set_language/<lang>')
+def set_language(lang):
+    if lang in ['en', 'ar', 'fr', 'de']:
+        session['lang'] = lang
+    return redirect(request.referrer or url_for('main.home'))
 
 
 @main.route("/about")

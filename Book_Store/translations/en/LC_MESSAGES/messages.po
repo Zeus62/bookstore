@@ -1,0 +1,366 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Browse Books"
+msgstr "Browse Books"
+
+msgid "Book"
+msgstr "Book"
+
+msgid "Store"
+msgstr "Store"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Books"
+msgstr "Books"
+
+msgid "About"
+msgstr "About"
+
+msgid "Welcome,"
+msgstr "Welcome,"
+
+msgid "Reviews"
+msgstr "Reviews"
+
+msgid "Cart"
+msgstr "Cart"
+
+msgid "Sign out"
+msgstr "Sign out"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Sign Up"
+msgstr "Sign Up"
+
+msgid "Book Store"
+msgstr "Book Store"
+
+msgid "Welcome to Book Store, your destination for discovering timeless classics and modern masterpieces. We offer a curated collection of books across all genres — from fiction and fantasy to philosophy and science fiction. Whether you are a casual reader or a devoted bookworm, you will find something to love in our collection."
+msgstr "Welcome to Book Store, your destination for discovering timeless classics and modern masterpieces. We offer a curated collection of books across all genres — from fiction and fantasy to philosophy and science fiction. Whether you are a casual reader or a devoted bookworm, you will find something to love in our collection."
+
+msgid "Browse Collection"
+msgstr "Browse Collection"
+
+msgid "Our Categories"
+msgstr "Our Categories"
+
+msgid "Fiction"
+msgstr "Fiction"
+
+msgid "Dive into captivating stories and unforgettable characters."
+msgstr "Dive into captivating stories and unforgettable characters."
+
+msgid "Fantasy"
+msgstr "Fantasy"
+
+msgid "Explore magical worlds and epic adventures beyond imagination."
+msgstr "Explore magical worlds and epic adventures beyond imagination."
+
+msgid "Philosophy"
+msgstr "Philosophy"
+
+msgid "Discover wisdom and ideas that have shaped human thought."
+msgstr "Discover wisdom and ideas that have shaped human thought."
+
+msgid "Browse"
+msgstr "Browse"
+
+msgid "Vision"
+msgstr "Vision"
+
+msgid "At Book Store, our vision is to inspire a love of reading in every person. We believe that books have the power to transform lives, broaden perspectives, and connect people across cultures and generations."
+msgstr "At Book Store, our vision is to inspire a love of reading in every person. We believe that books have the power to transform lives, broaden perspectives, and connect people across cultures and generations."
+
+msgid "Mission"
+msgstr "Mission"
+
+msgid "Our mission is to provide readers with easy access to a diverse selection of quality books at affordable prices, while creating a welcoming community for book lovers everywhere."
+msgstr "Our mission is to provide readers with easy access to a diverse selection of quality books at affordable prices, while creating a welcoming community for book lovers everywhere."
+
+msgid "Welcome Back, Reader!"
+msgstr "Welcome Back, Reader!"
+
+msgid "Explore our latest collection and leave your reviews."
+msgstr "Explore our latest collection and leave your reviews."
+
+msgid "Join Our Community"
+msgstr "Join Our Community"
+
+msgid "Sign up to leave reviews and get personalized recommendations."
+msgstr "Sign up to leave reviews and get personalized recommendations."
+
+msgid "Login Now!"
+msgstr "Login Now!"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "Welcome to Book Store — where stories come alive! We are passionate about connecting readers with the books they love. Whether you are searching for a timeless classic, a thrilling page-turner, or a thought-provoking masterpiece, we have got you covered."
+msgstr "Welcome to Book Store — where stories come alive! We are passionate about connecting readers with the books they love. Whether you are searching for a timeless classic, a thrilling page-turner, or a thought-provoking masterpiece, we have got you covered."
+
+msgid "Free Shipping"
+msgstr "Free Shipping"
+
+msgid "On All Orders Over $50"
+msgstr "On All Orders Over $50"
+
+msgid "Easy Returns"
+msgstr "Easy Returns"
+
+msgid "14 Day Returns Policy"
+msgstr "14 Day Returns Policy"
+
+msgid "Secure Payment"
+msgstr "Secure Payment"
+
+msgid "100% Secure Guarantee"
+msgstr "100% Secure Guarantee"
+
+msgid "Special Support"
+msgstr "Special Support"
+
+msgid "24/7 Dedicated Support"
+msgstr "24/7 Dedicated Support"
+
+msgid "Search books..."
+msgstr "Search books..."
+
+msgid "Search"
+msgstr "Search"
+
+msgid "All Categories"
+msgstr "All Categories"
+
+msgid "Filter"
+msgstr "Filter"
+
+msgid "No books found matching your search or filter."
+msgstr "No books found matching your search or filter."
+
+msgid "Category:"
+msgstr "Category:"
+
+msgid "Related Books"
+msgstr "Related Books"
+
+msgid "Log In"
+msgstr "Log In"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Log In"
+msgstr "Log In"
+
+msgid "Remember Me"
+msgstr "Remember Me"
+
+msgid "Need An Account?"
+msgstr "Need An Account?"
+
+msgid "Sign Up Here"
+msgstr "Sign Up Here"
+
+msgid "Create an Account"
+msgstr "Create an Account"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Phone Number"
+msgstr "Phone Number"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Confirm Password"
+msgstr "Confirm Password"
+
+msgid "Sign Up"
+msgstr "Sign Up"
+
+msgid "Already have an Account?"
+msgstr "Already have an Account?"
+
+msgid "Sign in"
+msgstr "Sign in"
+
+msgid "Your Reviews"
+msgstr "Your Reviews"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "Content"
+msgstr "Content"
+
+msgid "Submit Review"
+msgstr "Submit Review"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "to post a review."
+msgstr "to post a review."
+
+msgid "by"
+msgstr "by"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "No reviews yet — be the first to leave one!"
+msgstr "No reviews yet — be the first to leave one!"
+
+msgid "Book"
+msgstr "Book"
+
+msgid "Store"
+msgstr "Store"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Books"
+msgstr "Books"
+
+msgid "About"
+msgstr "About"
+
+msgid "© 2025 Book Store. All rights reserved."
+msgstr "© 2025 Book Store. All rights reserved."
+
+msgid "Fiction"
+msgstr "Fiction"
+
+msgid "Science Fiction"
+msgstr "Science Fiction"
+
+msgid "Romance"
+msgstr "Romance"
+
+msgid "Fantasy"
+msgstr "Fantasy"
+
+msgid "Philosophy"
+msgstr "Philosophy"
+
+msgid "Add to Cart"
+msgstr "Add to Cart"
+
+msgid "Your Cart"
+msgstr "Your Cart"
+
+msgid "Book"
+msgstr "Book"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Quantity"
+msgstr "Quantity"
+
+msgid "Subtotal"
+msgstr "Subtotal"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "Total:"
+msgstr "Total:"
+
+msgid "Proceed to Checkout"
+msgstr "Proceed to Checkout"
+
+msgid "Your cart is currently empty."
+msgstr "Your cart is currently empty."
+
+msgid "Continue Shopping"
+msgstr "Continue Shopping"
+
+msgid "Order Successful!"
+msgstr "Order Successful!"
+
+msgid "Thank you for your purchase."
+msgstr "Thank you for your purchase."
+
+msgid "Order Number:"
+msgstr "Order Number:"
+
+msgid "Date:"
+msgstr "Date:"
+
+msgid "Order Summary"
+msgstr "Order Summary"
+
+msgid "Total Paid:"
+msgstr "Total Paid:"
+
+msgid "The Great Gatsby"
+msgstr "The Great Gatsby"
+
+msgid "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
+msgstr "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
+
+msgid "To Kill a Mockingbird"
+msgstr "To Kill a Mockingbird"
+
+msgid "A novel about racial injustice in the Deep South through the eyes of a child."
+msgstr "A novel about racial injustice in the Deep South through the eyes of a child."
+
+msgid "1984"
+msgstr "1984"
+
+msgid "A dystopian novel set in a totalitarian society under constant surveillance."
+msgstr "A dystopian novel set in a totalitarian society under constant surveillance."
+
+msgid "Pride and Prejudice"
+msgstr "Pride and Prejudice"
+
+msgid "A romantic novel about the Bennet family and the proud Mr. Darcy."
+msgstr "A romantic novel about the Bennet family and the proud Mr. Darcy."
+
+msgid "The Catcher in the Rye"
+msgstr "The Catcher in the Rye"
+
+msgid "A story about teenage rebellion and alienation in 1950s America."
+msgstr "A story about teenage rebellion and alienation in 1950s America."
+
+msgid "Harry Potter"
+msgstr "Harry Potter"
+
+msgid "A young wizard discovers his magical heritage and attends Hogwarts."
+msgstr "A young wizard discovers his magical heritage and attends Hogwarts."
+
+msgid "The Lord of the Rings"
+msgstr "The Lord of the Rings"
+
+msgid "An epic fantasy adventure to destroy the One Ring and save Middle-earth."
+msgstr "An epic fantasy adventure to destroy the One Ring and save Middle-earth."
+
+msgid "The Alchemist"
+msgstr "The Alchemist"
+
+msgid "A shepherd boy travels from Spain to Egypt in search of treasure."
+msgstr "A shepherd boy travels from Spain to Egypt in search of treasure."
+
