@@ -24,10 +24,10 @@ def get_locale():
 
 babel = Babel(app, locale_selector=get_locale)
 
-# Use DATABASE_URI from environment variables if running in Docker, else fallback to a default local MySQL connection
+# Use DATABASE_URI from environment variables if running in Docker, else fallback to a local SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
     'DATABASE_URI',
-    'mysql+pymysql://root:bookstore2025@localhost:3306/BookStore'
+    'sqlite:///' + os.path.join(basedir, 'bookstore.db')
 )
 
 db = SQLAlchemy(app)
