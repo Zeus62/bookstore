@@ -86,6 +86,7 @@
                                 <i class="fas fa-user nav-icon" style="color:black;"></i><span>{{ _('Welcome,') }}</span> <span style="color:#2c6b4f;">{{ current_user.username }}</span>
                             </a>
                             <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ url_for('users.profile') }}">{{ _('Profile') }}</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('reviews_bp.reviews') }}">{{ _('Reviews') }}</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('users.logout') }}">{{ _('Sign out') }}</a></li>
                             </ul>

@@ -53,6 +53,8 @@ def books():
 
 @main.route('/book/<int:book_id>')
 def book_detail(book_id):
+    from Book_Store.reviews.forms import ReviewForm
     book = Book.query.get_or_404(book_id)
     related_books = Book.query.filter(Book.category == book.category).filter(Book.id != book_id).limit(4).all()
-    return render_template('book_detail.html', book=book, related_books=related_books)
+    form = ReviewForm()
+    return render_template('book_detail.html', book=book, related_books=related_books, form=form)

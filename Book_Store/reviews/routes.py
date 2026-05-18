@@ -6,23 +6,29 @@ from Book_Store.reviews.forms import ReviewForm
 from flask_login import login_required, current_user
 
 
-@reviews_bp.route('/reviews', methods=['GET', 'POST'])
+@reviews_bp.route('/reviews')
 @login_required
 def reviews():
+    user_reviews = Review.query.filter_by(user_id=current_user.id).order_by(Review.id.desc()).all()
+    return render_template('reviews.html', reviews=user_reviews)
+
+@reviews_bp.route('/add_review/<int:book_id>', methods=['POST'])
+@login_required
+def add_review(book_id):
     form = ReviewForm()
     if form.validate_on_submit():
         review = Review(
             user_id=current_user.id,
-            title=form.title.data.strip(),
+            book_id=book_id,
+            rating=form.rating.data,
             content=form.content.data.strip(),
         )
         db.session.add(review)
         db.session.commit()
         flash('Review added!', 'success')
-        return redirect(url_for('reviews_bp.reviews'))
-
-    user_reviews = Review.query.filter_by(user_id=current_user.id).order_by(Review.id.desc()).all()
-    return render_template('reviews.html', form=form, reviews=user_reviews)
+    else:
+        flash('Failed to add review. Make sure you entered valid data.', 'danger')
+    return redirect(url_for('main.book_detail', book_id=book_id))
 
 
 @reviews_bp.route('/edit_review/<int:review_id>', methods=['GET', 'POST'])
@@ -35,14 +41,15 @@ def edit_review(review_id):
 
     form = ReviewForm()
     if form.validate_on_submit():
-        review.title = form.title.data.strip()
+        review.rating = form.rating.data
         review.content = form.content.data.strip()
         db.session.commit()
         flash('Review updated!', 'success')
         return redirect(url_for('reviews_bp.reviews'))
 
-    form.title.data = review.title
-    form.content.data = review.content
+    elif request.method == 'GET':
+        form.rating.data = review.rating
+        form.content.data = review.content
     return render_template('edit_review.html', form=form, review=review)
 
 

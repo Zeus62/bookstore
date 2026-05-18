@@ -2,6 +2,7 @@ from Book_Store.users import users
 from Book_Store.models import User
 from Book_Store import bcrypt, db
 from flask import render_template, redirect, url_for, flash, session
+from Book_Store.models import Order, Cart
 from Book_Store.users.forms import RegisterForm, LoginForm
 from flask_login import login_user, login_required, logout_user
 
@@ -51,3 +52,10 @@ def logout():
     logout_user()
     flash("Signed out.", "info")
     return redirect(url_for('main.home'))
+
+@users.route('/profile')
+@login_required
+def profile():
+    orders = Order.query.filter_by(user_id=current_user.id).order_by(Order.date_ordered.desc()).all()
+    cart = Cart.query.filter_by(user_id=current_user.id).first()
+    return render_template('profile.html', title='Profile', orders=orders, cart=cart)

@@ -3,36 +3,12 @@
 {% block content %}
 <div class="container my-5">
   <h3 class="mb-4">{{ _('Your Reviews') }}</h3>
-  {% if current_user.is_authenticated %}
-  <form method="POST">
-    {{ form.csrf_token }}
-    <div class="form-group">
-      {{ form.title.label(**{'data-i18n': 'reviews.title_label'}) }}
-      {{ form.title(class_="form-control") }}
-      {% for error in form.title.errors %}
-      <div class="text-danger">{{ error }}</div>
-      {% endfor %}
-    </div>
-    <div class="form-group mt-2">
-      {{ form.content.label(**{'data-i18n': 'reviews.content_label'}) }}
-      {{ form.content(class_="form-control", rows="3") }}
-      {% for error in form.content.errors %}
-      <div class="text-danger">{{ error }}</div>
-      {% endfor %}
-    </div>
-    <div class="form-group mt-2">
-      {{ form.submit(class_="btn btn-success") }}
-    </div>
-  </form>
   <hr>
-  {% else %}
-    <p><a href="{{ url_for('users.login') }}">{{ _('Login') }}</a> <span>{{ _('to post a review.') }}</span></p>
-    <hr>
-  {% endif %}
   {% for review in reviews %}
   <div class="card mb-3">
       <div class="card-body">
-          <h5 class="card-title">{{ review.title|e }}</h5>
+          <h5 class="card-title">{{ _(review.book.title) }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ _('Rating:') }} {{ review.rating }} / 5</h6>
           <p class="card-text">{{ review.content|e }}</p>
           <small><span>{{ _('by') }}</span> {{ review.user.username }}</small>
           <div class="float-end">

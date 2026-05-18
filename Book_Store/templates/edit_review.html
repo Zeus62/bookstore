@@ -6,9 +6,9 @@
     <form method="POST">
       {{ form.csrf_token }}
       <div class="form-group">
-        {{ form.title.label }}
-        {{ form.title(class_="form-control") }}
-        {% for error in form.title.errors %}
+        {{ form.rating.label }}
+        {{ form.rating(class_="form-select") }}
+        {% for error in form.rating.errors %}
         <div class="text-danger">{{ error }}</div>
         {% endfor %}
       </div>
