@@ -9,7 +9,6 @@
       <div class="search-container">
         <input type="text" name="search" placeholder="{{ _('Search books...') }}" value="{{ current_search or '' }}"
           class="search-input">
-        <button type="submit" class="search-button">{{ _('Search') }}</button>
       </div>
 
       <div class="category-container">
@@ -21,8 +20,12 @@
           </option>
           {% endfor %}
         </select>
-        <button type="submit" class="filter-button">{{ _('Filter') }}</button>
       </div>
+
+      <button type="submit" class="search-button">{{ _('Search') }}</button>
+      {% if current_search or current_category %}
+      <a href="{{ url_for('main.books') }}" class="btn btn-outline-secondary btn-sm" style="border-radius: 25px; padding: 8px 20px;">{{ _('Clear') }}</a>
+      {% endif %}
     </form>
   </div>
 

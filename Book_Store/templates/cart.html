@@ -17,7 +17,7 @@
                 <tbody>
                     {% for item in items %}
                     <tr>
-                        <td>{{ item.book.title }}</td>
+                        <td>{{ _(item.book.title) }}</td>
                         <td>${{ "%.2f"|format(item.book.price) }}</td>
                         <td>
                             <form action="{{ url_for('shop.update_cart', item_id=item.id) }}" method="POST" class="d-flex align-items-center">

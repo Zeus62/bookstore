@@ -4,7 +4,7 @@ from Book_Store import bcrypt, db
 from flask import render_template, redirect, url_for, flash, session
 from Book_Store.models import Order, Cart
 from Book_Store.users.forms import RegisterForm, LoginForm
-from flask_login import login_user, login_required, logout_user
+from flask_login import login_user, login_required, logout_user, current_user
 
 
 @users.route('/login', methods=['GET', 'POST'])

@@ -1,7 +1,7 @@
 from Book_Store.reviews import reviews_bp
 from Book_Store.models import Review
 from Book_Store import db
-from flask import render_template, redirect, url_for, flash
+from flask import render_template, redirect, url_for, flash, request
 from Book_Store.reviews.forms import ReviewForm
 from flask_login import login_required, current_user
 

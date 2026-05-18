@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('main.home') }}" style="color: #2c6b4f;">
-                <span class="branding-navbar">{{ _('Book') }}</span> <span>{{ _('Store') }}</span>
+                <span>{{ _('Book') }}</span> <span>{{ _('Store') }}</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -44,11 +44,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('main.books') }}">
                             <i class="fas fa-book nav-icon"></i><span>{{ _('Books') }}</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('main.about') }}">
-                            <i class="fas fa-info-circle nav-icon"></i><span>{{ _('About') }}</span>
                         </a>
                     </li>
                 </ul>
@@ -126,11 +121,10 @@
     <!-- footer -->
     <footer style="background-color: #2c6b4f; color: white; padding: 20px 0; text-align: center; margin-bottom: 0px; margin-top: 80px;">
       <div style="max-width: 1200px; margin: auto;">
-          <p style="margin: 0; font-size: 1.1rem; color: white;"><span style="font-weight: bold;">{{ _('Book') }}</span> <span>{{ _('Store') }}</span></p>
+          <p style="margin: 0; font-size: 1.1rem; color: white;"><span>{{ _('Book') }}</span> <span>{{ _('Store') }}</span></p>
           <nav style="margin-top: 10px;">
               <a href="{{ url_for('main.home') }}" style="color: #ecf0f1; margin: 0 15px; text-decoration: none;">{{ _('Home') }}</a>
               <a href="{{ url_for('main.books') }}" style="color: #ecf0f1; margin: 0 15px; text-decoration: none;">{{ _('Books') }}</a>
-              <a href="{{ url_for('main.about') }}" style="color: #ecf0f1; margin: 0 15px; text-decoration: none;">{{ _('About') }}</a>
           </nav>
           <hr>
           <p style="margin-top: 10px; font-size: 0.9rem; color:white;">{{ _('© 2025 Book Store. All rights reserved.') }}</p>
